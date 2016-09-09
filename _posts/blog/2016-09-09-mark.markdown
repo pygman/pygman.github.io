@@ -1,0 +1,204 @@
+# Telegram
+> 前端 开源项目
+
+<https://telegram.org>
+Telegram Messenger – 很好用的聊天应用 ，有价值的是学习它的开源的代码，不管用户体验还是编码都值得学习，公司创始人背景也很神秘。
+
+    1. 简洁,那么臃肿的一定不是好的软件.
+    2. 多平台
+    3. 半开源.软件开源,服务器闭源.可以打造自己的加密APP.
+    4. 贴纸.特定文字触发特定表情特定贴纸
+    5. 显示在线与否,可以方便使用者沟通
+    6. 可以建立secret chat，加密
+    
+ios: <http://github.com/overtake/telegram>
+android: <https://github.com/DrKLO/Telegram>
+web: <https://github.com/zhukov/webogram>
+
+---------
+
+# noiz
+> 音乐 大自然背景
+
+<http://noiz.io>
+一款可以在编码的时候让心静下来的音乐应用，免费。有Mac和iphone版本，都是纯净的声音，自然界的水声、风声、鸟鸣等等，如果你对那些嘈杂的音乐听腻了，你怎么这款东东非常适合你。
+
+---------
+
+# Awesome screenshot
+> 浏览器 页面截取
+
+<http://www.awesomescreenshot.com/>
+chrome扩展插件。捕获整个页面或任何部分，可以滚动截取，矩形，圆形，箭头，线条和文字，模糊敏感信息，一键上传分享注释。支持PNG和链接。 在线共享图片、在线共享批注。是你和美工在线讨论图片问题的绝佳利器。有免费和付费版本。
+
+---------
+
+# Postman
+> 模拟 api请求
+
+<https://www.getpostman.com/>
+chrome插件。快速测试你的API,支持get、post方式，自定义header；自定义变量，可以方便的切换开发环境；支持数据的导入导出。调试url请求的非常赞的工具。免费
+
+---------
+
+# ngrok
+> 网络 反向代理 内网服务渗透
+
+<https://ngrok.com>
+一款可以把本地服务映射成网络服务的工具，免费。支持Mac、Window、Linux等系统。如果你想让本地应用和网络服务更好的调试，那么这款工具一定不会让你失望。包括微信、facebook等
+扩展阅读
+[使用ngrok让微信公众平台通过80端口访问本机](http://blog.csdn.net/liuxiyangyang/article/details/22922265)
+
+---------
+
+# Moon
+> Mac 快捷操作
+
+<https://manytricks.com/moom/>
+你是否会花很多时间在移动或缩放窗口上，为了能更好的在Mac上工作？那么用Moom可以代替你去完成这些工作。可以省去很多拖动窗口的时间。仅支持Mac。有免费使用次数，收费。
+
+---------
+
+# PicGIF Lite
+> 图片 gif生成
+
+<https://itunes.apple.com/us/app/picgif-lite/id844918735?mt=12>
+Mac上的应用，免费。可以将图片和短视频生成gif格式
+
+---------
+
+# 初页
+> 前端 创作
+
+<http://chuye.cloud7.com.cn/>
+微信H5海报创作神器
+
+---------
+
+# Dash
+> 文档 Mac离线文档
+
+<https://kapeli.com/dash>
+提供Mac上超过150+的离线API文档，更新及时。有免费和付费版本。
+
+---------
+
+# Charles
+> 网络 Mac下http网络请求监视
+
+<http://www.charlesproxy.com/>
+Charles是一个http代理/http镜像/反向代理工具，面向开发者提供关于http和SSL/HTTPS的介于本机和网络请求的可视化客 户端。包括requests,responses和http headers.免费，支持Mac,Windows,Linux.
+
+---------
+
+# Fluxion
+> 网络 无限破解
+
+<https://github.com/deltaxflux/fluxion>
+Fluxion是一个无线破解工具，这个工具有点像是Linset的翻版。但是与Linset比较起来，它有着更多有趣的功能。目前这个工具在Kali Linux上可以完美运行。
+
+工作原理:
+    1. 扫描能够接收到的WIFI信号
+    2. 抓取握手包（这一步的目的是为了验证WiFi密码是否正确）
+    3. 使用WEB接口
+    4. 启动一个假的AP实例来模拟原本的接入点
+    5. 然后会生成一个MDK3进程。如果普通用户已经连接到这个WiFi，也会输入WiFi密码
+    6. 随后启动一个模拟的DNS服务器并且抓取所有的DNS请求，并且会把这些请求重新定向到一个含有恶意脚本的HOST地址
+    7. 随后会弹出一个窗口提示用户输入正确的WiFi密码
+    8. 用户输入的密码将和第二步抓到的握手包做比较来核实密码是否正确
+    9. 这个程序是自动化运行的，并且能够很快的抓取到WiFi密码
+
+[运用Fluxion高效破解WiFi密码](http://toutiao.com/a6298511599876718850/)
+
+---------
+
+# Animate.css
+> 前端 CSS 动效库
+
+<https://daneden.github.io/animate.css/>
+Animate.css是我比较喜欢的一个CSS3动效库，非常适合那些对CSS3动画效果不熟悉，但又希望给自己所做的网站或基于H5的APP引入动效的朋友。因为，你只需要给需要实现动效的元素添加上Animate.css中预定义的那些动效名称就可以了。比如常见的：bounce，flash，fadeIn，fadeOut等等，加起来有75种不同的动效，完全能够满足你的基本需要了。
+
+当然对于这个库也有一些使用注意事项，比如你最好在给元素添加动效样式完成动效后，马上将这个动效样式去掉。另外，对于动效的时长，振动幅度等，你也需要做一些调整。因为，我感觉它默认设置中的动效过于快速和强烈了。Animate.css已经提供了详细的文档告诉你应该如何做这些调整。
+
+[10个值得前端收藏的CSS3动效库](http://toutiao.com/a6279111650562785537/)
+
+---------
+
+# Bounce.js
+> 前端 CSS 动效库
+
+<http://bouncejs.com/> <https://github.com/tictail/bounce.js/>
+
+Bounce.js是一个能够生成CSS3动效的小工具，它是用JavaScript编写的，提供了一个Web界面，你可以添加一个组件然后就可以选择包括Scale，Translate，Rotate，Skew这些动效类型，然后分别设置它们的参数，当达到你想要的效果后，你可以将这个动效以CSS的方式导出，这样你就可以将它应用到你的应用中了。
+
+---------
+
+# CSS3 Animation
+> 前端 CSS 动效库
+
+CSS3 Animation是一个非常简单易用的动效工具，你可以在它提供的简单图形界面里，通过拖拽一些进度条来控制你的动效，生成的CSS代码会自动显示在下面的一个文本框里，你可以拷贝粘贴到你的应用中直接使用。
+
+---------
+
+# CSS Animate
+> 前端 CSS 动效库
+
+如果你觉得上面的工具还无法做出你想要的动效，那么可以看看CSS Animate这个工具。它能让你设置更多的动效参数，比如你可以同时设置动效起始和终止状态的坐标，大小，以及透明度，这样你就能够做出更加复杂的动效来。
+
+---------
+
+
+# Magic Animations
+> 前端 CSS 动效库
+
+<http://www.minimamente.com/example/magic_animations/> <https://github.com/miniMAC/magic>
+Magic Animations与Animate.css十分类似，也是一个预定义了一系列动效的CSS库。但与Animate.css的最大区别可能是，它定义的那些动效更炫也更酷一些，如果你的网站也很新潮，那可以考虑使用这个CSS动效库。
+
+---------
+
+# AniJS
+> 前端 CSS 动效库
+
+<http://anijs.github.io/>
+
+---------
+
+# Single Element CSS Spinners
+> 前端 CSS 动效库 Loading 载入中
+
+<http://projects.lukehaas.me/css-loaders/>
+我们经常会需要一些动效来表达系统处于加载或处理数据的过程中。Single Element CSS Spinners这个在GitHub上的项目，提供了一组非常漂亮的可用于加载的CSS3动效。
+
+# Snabbt.js
+> 前端 CSS 动效库
+
+<https://daniel-lundin.github.io/snabbt.js/>
+Sanbbt.js是我很喜欢的一个动效库，它非常小巧只有5K，所以可以被用在移动应用中。而且它也支持链式语法，你可以很方便地写出复杂的动效组合。
+
+---------
+
+# Odometer
+> 前端 CSS 动效库 数字
+
+<http://github.hubspot.com/odometer/docs/welcome/> <https://github.com/HubSpot/odometer>
+Odometer是用来给数字作动效的，比如通过它你可以很好地呈现网站人数的增加，倒计时等与数字相关的动画效果。
+
+---------
+
+# Hover.css
+> 前端 CSS 动效库
+
+<http://ianlunn.github.io/Hover/>
+Hover.css提供了大量的Hover效果，包括2D变换，图标变换，背景变换等等。而且几乎可以应用于所有元素，包括链接，按钮，logo，SVG甚至图片等等。
+
+---------
+
+# Google Fonts
+> 前端 字体
+
+<https://fonts.google.com/> <https://developers.google.com/fonts/docs/getting_started>
+谷歌推出800多款开源字体
+2010年，谷歌首次推出了谷歌字体。最初，我们只发布了 14 种支持拉丁字母的开源字体。如今，谷歌字体每天被全世界超过 135 种语言的 150 亿人次观看。在过去六年中，我们字体开发团队继续更新着我们的字体库。
+
+---------
+

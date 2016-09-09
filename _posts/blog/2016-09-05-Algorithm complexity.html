@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+    <title>每个程序员都应该收藏的算法复杂度速查表!</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        td {
+            text-align: center;
+            padding: 4px 16px 4px 16px;
+        }
+
+        .perfect {
+            background-color: limegreen;
+        }
+
+        .good {
+            background-color: greenyellow;
+        }
+
+        .normal {
+            background-color: yellow;
+        }
+
+        .bad {
+            background-color: orange;
+        }
+
+        .worst {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<h2>每个程序员都应该收藏的算法复杂度速查表</h2>
+<h3>算法复杂度这件事</h3>
+<p>这篇文章覆盖了计算机科学里面常见算法的时间和空间的大
+    O（Big-O）复杂度。我之前在参加面试前，经常需要花费很多时间从互联网上查找各种搜索和排序算法的优劣，以便我在面试时不会被问住。最近这几年，我面试了几家硅谷的初创企业和一些更大一些的公司，如 Yahoo、eBay、LinkedIn
+    和 Google，每次我都需要准备这个，我就在问自己，“为什么没有人创建一个漂亮的大 O 速查表呢？”所以，为了节省大家的时间，我就创建了这个，希望你喜欢！</p>
+
+<h3>图例</h3>
+<table align="center">
+    <tr>
+        <td class="perfect">绝佳</td>
+        <td class="good">不错</td>
+        <td class="normal">一般</td>
+        <td class="bad">不佳</td>
+        <td class="worst">糟糕</td>
+    </tr>
+</table>
+<h3>数据结构操作</h3>
+<table align="center">
+    <thead>
+    <tr>
+        <td>数据结构</td>
+        <td colspan="8">时间复杂度</td>
+        <td>空间复杂度</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="4">平均</td>
+        <td colspan="4">最差</td>
+        <td>最差</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>访问</td>
+        <td>搜索</td>
+        <td>插入</td>
+        <td>删除</td>
+        <td>访问</td>
+        <td>搜索</td>
+        <td>插入</td>
+        <td>删除</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Array</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Stack</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Singly-Linked List</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Doubly-Linked List</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Skip List</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="bad">O(n log(n))</td>
+    </tr>
+    <tr>
+        <td>Hash Table</td>
+        <td> -</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td> -</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Binary Search Tree</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Cartesian Tree</td>
+        <td> -</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td> -</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>B-Tree</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Read_Black Tree</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Splay Tree</td>
+        <td> -</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td> -</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>AVL Tree</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="good">O(log(n))</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    </tbody>
+</table>
+<h3>数组排序算法</h3>
+<table align="center">
+    <thead>
+    <tr>
+        <td>算法</td>
+        <td colspan="3">时间复杂度</td>
+        <td>空间复杂度</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>最佳</td>
+        <td>平均</td>
+        <td>最差</td>
+        <td>最差</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Quick Sort</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="worst">O(n^2)</td>
+        <td class="good">O(log(n))</td>
+    </tr>
+    <tr>
+        <td>Merge Sort</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Tim Sort</td>
+        <td class="perfect">O(n)</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Heap Sort</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="bad">O(n log(n))</td>
+        <td class="perfect">O(1)</td>
+    </tr>
+    <tr>
+        <td>Bubble Sort</td>
+        <td class="perfect">O(n)</td>
+        <td class="worst">O(n^2)</td>
+        <td class="worst">O(n^2)</td>
+        <td class="perfect">O(1)</td>
+    </tr>
+    <tr>
+        <td>Insertion Sort</td>
+        <td class="perfect">O(n)</td>
+        <td class="worst">O(n^2)</td>
+        <td class="worst">O(n^2)</td>
+        <td class="perfect">O(1)</td>
+    </tr>
+    <tr>
+        <td>Selection Sort</td>
+        <td class="worst">O(n^2)</td>
+        <td class="worst">O(n^2)</td>
+        <td class="worst">O(n^2)</td>
+        <td class="perfect">O(1)</td>
+    </tr>
+    <tr>
+        <td>Shell Sort</td>
+        <td class="perfect">O(n)</td>
+        <td class="worst">O((n log(n))^2)</td>
+        <td class="worst">O((n log(n))^2)</td>
+        <td class="perfect">O(1)</td>
+    </tr>
+    <tr>
+        <td>Bucket Sort</td>
+        <td class="perfect">O(n+k)</td>
+        <td class="perfect">O(n+k)</td>
+        <td class="worst">O(n^2)</td>
+        <td class="normal">O(n)</td>
+    </tr>
+    <tr>
+        <td>Radix Sort</td>
+        <td class="perfect">O(nk)</td>
+        <td class="perfect">O(nk)</td>
+        <td class="perfect">O(nk)</td>
+        <td class="normal">O(n+k)</td>
+    </tr>
+    </tbody>
+</table>
+<h3>图操作</h3>
+<table align="center">
+    <thead>
+    <tr>
+        <td>节点/边界管理</td>
+        <td>储存</td>
+        <td>增加顶点</td>
+        <td>增加边界</td>
+        <td>移除顶点</td>
+        <td>移除边界</td>
+        <td>查询</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Adjacency list</td>
+        <td class="normal">O(|V|+|E|)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(|V|+|E|)</td>
+        <td class="normal">O(|E|)</td>
+        <td class="normal">O(|V|)</td>
+    </tr>
+    <tr>
+        <td>Incidence list</td>
+        <td class="normal">O(|V|+|E|)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="normal">O(|E|)</td>
+        <td class="normal">O(|E|)</td>
+        <td class="normal">O(|E|)</td>
+    </tr>
+    <tr>
+        <td>Adjacency matrix</td>
+        <td class="worst">O(|V|^2)</td>
+        <td class="worst">O(|V|^2)</td>
+        <td class="perfect">O(1)</td>
+        <td class="worst">O(|V|^2)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+    </tr>
+    <tr>
+        <td>Incidence matrix</td>
+        <td class="worst">O(|V|·|E|)</td>
+        <td class="worst">O(|V|·|E|)</td>
+        <td class="worst">O(|V|·|E|)</td>
+        <td class="worst">O(|V|·|E|)</td>
+        <td class="worst">O(|V|·|E|)</td>
+        <td class="normal">O(|E|)</td>
+    </tr>
+    </tbody>
+</table>
+<h3>堆操作</h3>
+<table align="center">
+    <thead>
+    <tr>
+        <td>类型</td>
+        <td colspan="7">时间复杂度</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Heapify</td>
+        <td>查找最大值</td>
+        <td>分离最大值</td>
+        <td>提升键</td>
+        <td>插入</td>
+        <td>删除</td>
+        <td>合并</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Linked List(sorted)</td>
+        <td></td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="worst">O(n)</td>
+        <td class="worst">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="worst">O(m+n)</td>
+    </tr>
+    <tr>
+        <td>Linked List(unsorted)</td>
+        <td></td>
+        <td class="worst">O(n)</td>
+        <td class="worst">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+    </tr>
+    <tr>
+        <td>Binary Heap</td>
+        <td class="normal">O(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="good">O(log(n)</td>
+        <td class="good">O(log(n)</td>
+        <td class="good">O(log(n)</td>
+        <td class="good">O(log(n)</td>
+        <td class="worst">O(m+n)</td>
+    </tr>
+    <tr>
+        <td>Binomial Heap</td>
+        <td></td>
+        <td class="perfect">O(1)</td>
+        <td class="good">O(log(n)</td>
+        <td class="good">O(log(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="good">O(log(n)</td>
+        <td class="good">O(log(n)</td>
+    </tr>
+    <tr>
+        <td>Fibonacci Heap</td>
+        <td></td>
+        <td class="perfect">O(1)</td>
+        <td class="good">O(log(n)</td>
+        <td class="perfect">O(1)</td>
+        <td class="perfect">O(1)</td>
+        <td class="good">O(log(n)</td>
+        <td class="perfect">O(1)</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
