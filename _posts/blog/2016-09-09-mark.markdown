@@ -209,3 +209,42 @@ Hover.css提供了大量的Hover效果，包括2D变换，图标变换，背景�
 
 ---------
 
+# Bootstrap Magic
+> 前端 Bootstrap主题
+
+<https://pikock.github.io/bootstrap-magic/app/index.html>
+Bootstrap Magic这个在线工具支持可视化定制Bootstap。通过使用这个网站，您还可以创建自己的bootstrap主题。
+
+---------
+
+# IcoMoon
+> 前端 css 图标 字体
+
+<https://icomoon.io/>
+在线图标字体生成器IcoMoon    使用icomoon您可以轻松地搜索和下载矢量图标或生成的图标字体。这个工具也可以用于图标集管理。这样的字体图标可以像平时我们用字体样进行各种控制，例如颜色，字号，文字阴影等等。
+类似的字体制作软件还有FontCreator,在线站点http://www.iconfont.cn 等等。至于具体怎么使用，官网上都有详细介绍，相信都是很简单的。下图最左侧的橙色搜索icon用的就是字体，右侧数字是一个倒计时应用的案例。
+
+---------
+
+# TinyPNG
+> 前端 图片 压缩
+
+png 图片压缩
+
+---------
+
+# WeUI
+> 前端 UI库
+
+微信官方提供UI库
+
+---------
+
+# h5create
+> 前端 页面 模板
+
+国产h5页面模板
+
+---------
+
+
