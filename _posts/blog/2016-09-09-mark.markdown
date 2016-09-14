@@ -247,4 +247,91 @@ png 图片压缩
 
 ---------
 
+# Code Combat
+> 游戏 编程 教育 中文 python
+
+<https://codecombat.com>
+虽然Code Combat是为学校里的学生而制作的，但是这款游戏还是受到很多成年人的喜爱。通过编程来控制一个勇敢的英雄通过成百的地牢，与敌人战斗并收集宝石。完成整个游戏大概需要20+小时，并能覆盖绝大多数的编程概念。
+
+---------
+
+# Hex Invaders
+> 游戏 编程
+
+<http://www.hexinvaders.com/>
+这款经典的娱乐游戏是这个世界别三个颜色的外星人入侵，每一个代表不同的颜色。为了拯救人类，玩家必须快速的把RGB的十六进制值翻译成人类的可以识别的颜色，并射击入侵者。
+
+---------
+
+# Flexbox Froggy
+> 游戏 前端 css 教育
+
+<http://flexboxfroggy.com/>
+这个益智游戏需要你帮助各种颜色的青蛙得到它们睡莲的机会。用Flexbox模式来移动这种两栖动物，并能真正测试你的布局构建能力。在游戏中的弱提示帮助在不同的情况下使用不同的CSS属性，但这完全取决于游戏者来操控。
+
+---------
+
+# Pixactly
+> 游戏 像素 css
+
+<http://pixact.ly/>
+Pixactly坚持一个简单但是非常有挑战的理念。这个游戏给你两个随机的像素值，一个长方形代表宽度，另一个代表高度。玩家需要尽可能的绘制给定尺寸的盒子。
+
+---------
+
+# CSS Diner
+> 游戏 前端 css 选择器
+
+<http://flukeout.github.io/>
+很棒的一个学习CSS选择器的游戏。玩家需要在一个有盘子的桌子上，选定某个或某些元素。不同的级别可以满足相应web开发者的水平，像基本的 ~ 和:first-child
+
+---------
+
+# Screeps
+> 游戏 js 战略
+
+<https://screeps.com/>
+你可以想象这个游戏是一个数字化的蚂蚁农场，里面所有的“蚂蚁”都是被玩家的编程控制的。在建立了基地和你设定的爬行程序之后，它们就开始了各自的探索这个无止境的游戏世界，收集资源并和敌人战斗，甚至可以离线操作。
+
+---------
+
+# CodinGame
+> 游戏 编程
+
+<https://www.codingame.com/>
+一个大的游戏集，可以用各种语言来玩，包括：JavaScript,PHP,Ruby,Go,Python,还有其他的编程语言。这个平台包括大量的谜题，支持多个玩家和智能游戏，同时代码支持高级编辑器像Emacs和Vim.
+
+---------
+
+# Flexbox Defense
+> 游戏 编程 前端 css flexbox
+
+<http://www.flexboxdefense.com/>
+经典的塔防游戏用CSS的旋转来玩-所有的塔楼和通道是用flexbox的布局来实现。有12级的敌人来到达底部。想要完成这个游戏，需要你知道完全的flexbox的属性。
+
+---------
+
+# Elevator Saga
+> 游戏 js 规划
+
+<http://play.elevatorsaga.com/>
+Elevator Saga是一个益智游戏，用JavaScript来控制建筑里的电梯。很多人一直的上上下下，你需要尽可能快的让他们到达他们的目的地。这个游戏测试你的算法书写能力，同时也测试JS的函数，数组和事件处理。
+
+---------
+
+# Untrusted
+> 游戏 RPG 策略
+
+<https://alexnisnevich.github.io/>
+Untrusted是一个meta-JavaScript冒险游戏，你扮演Dr. Eval, @ 通过改变源码来控制周围的世界。玩家用初始化的函数和使用游戏的API来让Dr. Eval逃离。
+
+---------
+
+# Bonus: Dungeons & Developers
+> 前端 技能树 模拟
+
+<http://www.dungeonsanddevelopers.com/>
+一个具有CSS,HTML,JavaScript魔法的智慧树。增加你的技能在上面，看看你和真正的web开发者有多接近。可以通过自己的冒险来生成自己的智慧树简历。
+
+---------
 
