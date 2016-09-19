@@ -252,3 +252,44 @@ ND4J是一个开源的代码库，它将来自于Python社区的直观科学计�
 
 ---------
 
+# free-programming-books
+> 开源项目 免费 电子书
+
+<https://github.com/vhf/free-programming-books> <https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md>
+这个项目目前 star 数排名 GitHub 第三，总 star 数超过6w，这个项目整理了所有跟编程相关的免费书籍，而且全球多国语言版的都有，中文版的在这里：free-programming-books-zh，有了这个项目，理论上你可以获取任何编程相关的学习资料，强烈推荐给你们！
+
+---------
+
+# awesome.re
+> 开源项目 语言 库 框架 合集
+
+<https://awesome.re> <https://github.com/sindresorhus/awesome>
+GitHub 上有各种 awesome 系列，简单来说就是这个系列搜罗整理了 GitHub 上各领域的资源大汇总，比如有 awesome-android, awesome-ios, awesome-java, awesome-python 等等等，就不截图了，你们自行去感受。 各种niubility的库和框架大合集
+
+---------
+
+# android-open-project
+> 开源项目 安卓
+
+<https://github.com/Trinea/android-open-project>
+这个项目是我一个好朋友 Trinea 整理的一个开源项目，基本囊括了所有 GitHub 上的 Android 优秀开源项目，但是缺点就是太多了不适合快速搜索定位，但是身为 Android 开发无论如何你们应该知道这个项目。
+
+---------
+
+# awesome-android-ui
+> 开源项目 安卓 UI
+
+<https://github.com/wasabeef/awesome-android-ui>
+这个项目跟上面的区别是，这个项目只整理了所有跟 Android UI 相关的优秀开源项目，基本你在实际开发终于到的各种效果上面都几乎能找到类似的项目，简直是开发必备。
+
+---------
+
+# LearningNotes
+> 开源项目 安卓 学习资料
+
+<https://github.com/GeniusVJR/LearningNotes>
+这是一份非常详细的面试资料，涉及 Android、Java、设计模式、算法等等等，你能想到的，你不能想到的基本都包含了，可以说是适应于任何准备面试的 Android 开发者，看完这个之后别说你还不知道怎么面试！
+
+---------
+
+# 
