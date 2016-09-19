@@ -27,13 +27,13 @@ categories: blog
 
 1. 二维平面上两点a(x1,y1)与b(x2,y2)间的欧氏距离：
 
-    ![EuclideanDistance-1.png](/gist/pics/geshigeyangdejuli/EuclideanDistance-1.png)
+    ![EuclideanDistance-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/EuclideanDistance-1.png)
 2. 三维空间两点a(x1,y1,z1)与b(x2,y2,z2)间的欧氏距离：
 
-    ![EuclideanDistance-2.png](/gist/pics/geshigeyangdejuli/EuclideanDistance-2.png)
+    ![EuclideanDistance-2.png](http://pygman.com/gist/pics/geshigeyangdejuli/EuclideanDistance-2.png)
 3. 两个n维向量a(x11,x12,…,x1n)与 b(x21,x22,…,x2n)间的欧氏距离：
 
-    ![EuclideanDistance-3.png](/gist/pics/geshigeyangdejuli/EuclideanDistance-3.png)
+    ![EuclideanDistance-3.png](http://pygman.com/gist/pics/geshigeyangdejuli/EuclideanDistance-3.png)
 4. Matlab计算欧氏距离
    Matlab计算距离主要使用pdist函数。若X是一个M×N的矩阵，则pdist(X)将X矩阵M行的每一行作为一个N维向量，然后计算这M个向量两两间的距离。
    例子：计算向量(0,0)、(1,0)、(0,2)两两间的欧式距离
@@ -52,10 +52,10 @@ categories: blog
 
 1. 二维平面两点a(x1,y1)与b(x2,y2)间的曼哈顿距离
 
-    ![ManhattanDistance-1.png](/gist/pics/geshigeyangdejuli/ManhattanDistance-1.png)
+    ![ManhattanDistance-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/ManhattanDistance-1.png)
 2. 两个n维向量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的曼哈顿距离
 
-    ![ManhattanDistance-2.png](/gist/pics/geshigeyangdejuli/ManhattanDistance-2.png)
+    ![ManhattanDistance-2.png](http://pygman.com/gist/pics/geshigeyangdejuli/ManhattanDistance-2.png)
 3. Matlab计算曼哈顿距离
    例子：计算向量(0,0)、(1,0)、(0,2)两两间的曼哈顿距离
 ```
@@ -73,14 +73,14 @@ categories: blog
 
 1. 二维平面两点a(x1,y1)与b(x2,y2)间的切比雪夫距离
 
-    ![ChebyshevDistance-1.png](/gist/pics/geshigeyangdejuli/ChebyshevDistance-1.png)
+    ![ChebyshevDistance-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/ChebyshevDistance-1.png)
 2. 两个n维向量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的切比雪夫距离
 
-    ![ChebyshevDistance-2.png](/gist/pics/geshigeyangdejuli/ChebyshevDistance-2.png)
+    ![ChebyshevDistance-2.png](http://pygman.com/gist/pics/geshigeyangdejuli/ChebyshevDistance-2.png)
 
     这个公式的另一种等价形式是
 
-    ![ChebyshevDistance-3.png](/gist/pics/geshigeyangdejuli/ChebyshevDistance-3.png)
+    ![ChebyshevDistance-3.png](http://pygman.com/gist/pics/geshigeyangdejuli/ChebyshevDistance-3.png)
 3. Matlab计算切比雪夫距离
    例子：计算向量(0,0)、(1,0)、(0,2)两两间的切比雪夫距离
 ```
@@ -100,7 +100,7 @@ categories: blog
 
     两个n维变量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的闵可夫斯基距离定义为：
 
-    ![MinkowskiDistance-1.png](/gist/pics/geshigeyangdejuli/MinkowskiDistance-1.png)
+    ![MinkowskiDistance-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/MinkowskiDistance-1.png)
 
     其中p是一个变参数。
     当p=1时，就是曼哈顿距离
@@ -130,12 +130,12 @@ categories: blog
    　　标准化欧氏距离是针对简单欧氏距离的缺点而作的一种改进方案。标准欧氏距离的思路：既然数据各维分量的分布不一样，好吧！那我先将各个分量都“标准化”到均值、方差相等吧。均值和方差标准化到多少呢？这里先复习点统计学知识吧，假设样本集X的均值(mean)为m，标准差(standarddeviation)为s，那么X的“标准化变量”表示为：
    　　而且标准化变量的数学期望为0，方差为1。因此样本集的标准化过程(standardization)用公式描述就是：
 
-   ![StandardizedEuclideanDistance-1.png](/gist/pics/geshigeyangdejuli/StandardizedEuclideanDistance-1.png)
+   ![StandardizedEuclideanDistance-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/StandardizedEuclideanDistance-1.png)
 
    标准化后的值 =  ( 标准化前的值  － 分量的均值 ) /分量的标准差
    　　经过简单的推导就可以得到两个n维向量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的标准化欧氏距离的公式：
 
-   ![StandardizedEuclideanDistance-2.png](/gist/pics/geshigeyangdejuli/StandardizedEuclideanDistance-2.png)
+   ![StandardizedEuclideanDistance-2.png](http://pygman.com/gist/pics/geshigeyangdejuli/StandardizedEuclideanDistance-2.png)
 
    如果将方差的倒数看成是一个权重，这个公式可以看成是一种加权欧氏距离(WeightedEuclidean distance)。
 
@@ -155,15 +155,15 @@ D=
 1. 马氏距离定义
        有M个样本向量X1~Xm，协方差矩阵记为S，均值记为向量μ，则其中样本向量X到u的马氏距离表示为：
 
-    ![MahalanobisDistance-1.png](/gist/pics/geshigeyangdejuli/MahalanobisDistance-1.png)
+    ![MahalanobisDistance-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/MahalanobisDistance-1.png)
 
     而其中向量Xi与Xj之间的马氏距离定义为：
 
-    ![MahalanobisDistance-2.png](/gist/pics/geshigeyangdejuli/MahalanobisDistance-2.png)
+    ![MahalanobisDistance-2.png](http://pygman.com/gist/pics/geshigeyangdejuli/MahalanobisDistance-2.png)
 
     若协方差矩阵是单位矩阵（各个样本向量之间独立同分布）,则公式就成了：
 
-    ![MahalanobisDistance-3.png](/gist/pics/geshigeyangdejuli/MahalanobisDistance-3.png)
+    ![MahalanobisDistance-3.png](http://pygman.com/gist/pics/geshigeyangdejuli/MahalanobisDistance-3.png)
 
     也就是欧氏距离了。
     　　若协方差矩阵是对角矩阵，公式变成了标准化欧氏距离。
@@ -185,16 +185,16 @@ D=
 
 1. 在二维空间中向量A(x1,y1)与向量B(x2,y2)的夹角余弦公式：
 
-    ![Cosine-1.png](/gist/pics/geshigeyangdejuli/Cosine-1.png)
+    ![Cosine-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/Cosine-1.png)
 
 2. 两个n维样本点a(x11,x12,…,x1n)和b(x21,x22,…,x2n)的夹角余弦
           类似的，对于两个n维样本点a(x11,x12,…,x1n)和b(x21,x22,…,x2n)，可以使用类似于夹角余弦的概念来衡量它们间的相似程度。
 
-    ![Cosine-2.png](/gist/pics/geshigeyangdejuli/Cosine-2.png)
+    ![Cosine-2.png](http://pygman.com/gist/pics/geshigeyangdejuli/Cosine-2.png)
 
     即:
 
-    ![Cosine-3.png](/gist/pics/geshigeyangdejuli/Cosine-3.png)
+    ![Cosine-3.png](http://pygman.com/gist/pics/geshigeyangdejuli/Cosine-3.png)
 
     夹角余弦取值范围为[-1,1]。夹角余弦越大表示两个向量的夹角越小，夹角余弦越小表示两向量的夹角越大。当两个向量的方向重合时夹角余弦取最大值1，当两个向量的方向完全相反夹角余弦取最小值-1。
 
@@ -232,13 +232,13 @@ D=
 1. 杰卡德相似系数
           两个集合A和B的交集元素在A，B的并集中所占的比例，称为两个集合的杰卡德相似系数，用符号J(A,B)表示。
 
-    ![JaccardsimilarityCoefficient-1.png](/gist/pics/geshigeyangdejuli/JaccardsimilarityCoefficient-1.png)
+    ![JaccardsimilarityCoefficient-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/JaccardsimilarityCoefficient-1.png)
 
     杰卡德相似系数是衡量两个集合的相似度一种指标。
 2. 杰卡德距离
        与杰卡德相似系数相反的概念是杰卡德距离(Jaccarddistance)。杰卡德距离可用如下公式表示：
 
-    ![JaccardsimilarityCoefficient-2.png](/gist/pics/geshigeyangdejuli/JaccardsimilarityCoefficient-2.png)
+    ![JaccardsimilarityCoefficient-2.png](http://pygman.com/gist/pics/geshigeyangdejuli/JaccardsimilarityCoefficient-2.png)
 
     杰卡德距离用两个集合中不同元素占所有元素的比例来衡量两个集合的区分度。
 3. 杰卡德相似系数与杰卡德距离的应用
@@ -252,7 +252,7 @@ D=
    这里p+q+r可理解为A与B的并集的元素个数，而p是A与B的交集的元素个数。
    而样本A与B的杰卡德距离表示为：
 
-    ![JaccardsimilarityCoefficient-3.png](/gist/pics/geshigeyangdejuli/JaccardsimilarityCoefficient-3.png)
+    ![JaccardsimilarityCoefficient-3.png](http://pygman.com/gist/pics/geshigeyangdejuli/JaccardsimilarityCoefficient-3.png)
 
 4. Matlab计算杰卡德距离
    Matlab的pdist函数定义的杰卡德距离跟我这里的定义有一些差别，Matlab中将其定义为不同的维度的个数占“非全零维度”的比例。
@@ -270,12 +270,12 @@ D=
 
 1. 相关系数的定义
 
-    ![correlation-1.png](/gist/pics/geshigeyangdejuli/correlation-1.png)
+    ![correlation-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/correlation-1.png)
 
     相关系数是衡量随机变量X与Y相关程度的一种方法，相关系数的取值范围是[-1,1]。相关系数的绝对值越大，则表明X与Y相关度越高。当X与Y线性相关时，相关系数取值为1（正线性相关）或-1（负线性相关）。
 2. 相关距离的定义
 
-    ![correlation-2.png](/gist/pics/geshigeyangdejuli/correlation-2.png)
+    ![correlation-2.png](http://pygman.com/gist/pics/geshigeyangdejuli/correlation-2.png)
 
 3. Matlab计算(1, 2 ,3 ,4 )与( 3 ,8 ,7 ,6 )之间的相关系数与相关距离
 ```
@@ -298,9 +298,10 @@ D=
 - 信息熵是衡量分布的混乱程度或分散程度的一种度量。分布越分散(或者说分布越平均)，信息熵就越大。分布越有序（或者说分布越集中），信息熵就越小。
 - 计算给定的样本集X的信息熵的公式：
 
-    ![InformationEntropy-1.png](/gist/pics/geshigeyangdejuli/InformationEntropy-1.png)
+    ![InformationEntropy-1.png](http://pygman.com/gist/pics/geshigeyangdejuli/InformationEntropy-1.png)
 
 参数的含义：
+
 - n：样本集X的分类数
 - pi：X中第i类元素出现的概率
 - 信息熵越大表明样本集S分类越分散，信息熵越小则表明样本集X分类越集中。。当S中n个分类出现的概率一样大时（都是1/n），信息熵取最大值log2(n)。当X只有一个分类时，信息熵取最小值0
