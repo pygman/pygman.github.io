@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mark 收藏!"
+title:  "小收藏!"
 date:   2016-09-01 14:46:00 +0800
 categories: blog
 ---
@@ -209,129 +209,94 @@ Hover.css提供了大量的Hover效果，包括2D变换，图标变换，背景�
 
 ---------
 
-# Bootstrap Magic
-> 前端 Bootstrap主题
+# TableSaw
+> 前端 表格 交互性 强大
 
-<https://pikock.github.io/bootstrap-magic/app/index.html>
-Bootstrap Magic这个在线工具支持可视化定制Bootstap。通过使用这个网站，您还可以创建自己的bootstrap主题。
-
----------
-
-# IcoMoon
-> 前端 css 图标 字体
-
-<https://icomoon.io/>
-在线图标字体生成器IcoMoon    使用icomoon您可以轻松地搜索和下载矢量图标或生成的图标字体。这个工具也可以用于图标集管理。这样的字体图标可以像平时我们用字体样进行各种控制，例如颜色，字号，文字阴影等等。
-类似的字体制作软件还有FontCreator,在线站点http://www.iconfont.cn 等等。至于具体怎么使用，官网上都有详细介绍，相信都是很简单的。下图最左侧的橙色搜索icon用的就是字体，右侧数字是一个倒计时应用的案例。
+<https://github.com/filamentgroup/tablesaw>
+Tablesaw是一个包含了数据工具和以列（column）为主要存储形式的响应式内存数据表格插件。它围绕着没有谁愿意为小型任务进行分布式分析的理念而设计，你可以在一台单独服务器上使用一个200万行的表格进行交互性的工作。
+你可以使用Tablesaw来演示呈现的布局、数据优先级或者为用户提供数据显示与交互的一系列扩展控制。在Tablesaw中，你可以导入来自RDBMS和CSV文件的数据，添加或者移除列、执行示图，通过压缩的柱状储存格式来减少表格的操作和存储。
 
 ---------
 
-# TinyPNG
-> 前端 图片 压缩
+# Chronicle Map
+> 键值储存 Java
 
-png 图片压缩
-
----------
-
-# WeUI
-> 前端 UI库
-
-微信官方提供UI库
+<https://github.com/OpenHFT/Chronicle-Map> <http://chronicle.software/products/chronicle-map/>
+Chronicle Map是用于存储内存键值的插件。它主要面向诸如贸易和金融市场应用这一类低延迟和多进程应用程序。这个代码库专注于读写查询的平均延迟，它能够让你编写与服务器中硬件执行线程数量相当的查询。
+这个插件的主要用例是可在单独的服务器（比如Redis）上移除那些缓慢的键值存储以及通过类似于JVM-centric的解决方案来对其加速。
 
 ---------
 
-# h5create
-> 前端 页面 模板
+# Gumshoe
+> Java 负载性能监控
 
-国产h5页面模板
-
----------
-
-# Code Combat
-> 游戏 编程 教育 中文 python
-
-<https://codecombat.com>
-虽然Code Combat是为学校里的学生而制作的，但是这款游戏还是受到很多成年人的喜爱。通过编程来控制一个勇敢的英雄通过成百的地牢，与敌人战斗并收集宝石。完成整个游戏大概需要20+小时，并能覆盖绝大多数的编程概念。
+Gumshoe可以让你能够监控应用程序的性能统计。使用它，你可以精确的找到代码的行数并获取调用堆栈及单个堆栈框架的相关统计数据。这意味着你能够分析你电脑资源的使用情况（TCP、UDP、文件系统或处理器利用率）
+这个代码库支持屏幕截图、过滤以及生成可视化的数据统计，并且能够给予你关于火焰图和根图(flame and root graphs)的直观视图。如果你还想要寻找关于应用程序的更多细节，你还可以在捕捉或者可视化的时候对堆栈框架进行过滤，并在运行时进行改变。
 
 ---------
 
-# Hex Invaders
-> 游戏 编程
+# SoundSea
+> Java 音乐播放器
 
-<http://www.hexinvaders.com/>
-这款经典的娱乐游戏是这个世界别三个颜色的外星人入侵，每一个代表不同的颜色。为了拯救人类，玩家必须快速的把RGB的十六进制值翻译成人类的可以识别的颜色，并射击入侵者。
-
----------
-
-# Flexbox Froggy
-> 游戏 前端 css 教育
-
-<http://flexboxfroggy.com/>
-这个益智游戏需要你帮助各种颜色的青蛙得到它们睡莲的机会。用Flexbox模式来移动这种两栖动物，并能真正测试你的布局构建能力。在游戏中的弱提示帮助在不同的情况下使用不同的CSS属性，但这完全取决于游戏者来操控。
+SoundSea可以让你通过其内置的元数据和音乐集搜索和下载歌曲。当你在搜索某一个歌曲时，SoundSea会寻找iTunes上的相关元数据和音乐集。如果拥有超过一首可用的结果，你可以从中再筛选需要的那一个。
+歌曲的下载来自于Pleer.com，你可以通过高，低或者VBR比特率来进行过滤。如果你比较幸运，你甚至可以立刻下载作为最终结果的第一个搜索结果。此外，它还拥有一个迷你播放器，无需重载音乐库就可以简单倾听歌曲。
 
 ---------
 
-# Pixactly
-> 游戏 像素 css
+# LeakCanary
+> Java 检测内存泄露
 
-<http://pixact.ly/>
-Pixactly坚持一个简单但是非常有挑战的理念。这个游戏给你两个随机的像素值，一个长方形代表宽度，另一个代表高度。玩家需要尽可能的绘制给定尺寸的盒子。
-
----------
-
-# CSS Diner
-> 游戏 前端 css 选择器
-
-<http://flukeout.github.io/>
-很棒的一个学习CSS选择器的游戏。玩家需要在一个有盘子的桌子上，选定某个或某些元素。不同的级别可以满足相应web开发者的水平，像基本的 ~ 和:first-child
+LeakCanary是一个可帮助你阻止内存泄露的开源库，你可以用它来构建调试检测Java内存泄漏（以及Android）。
+在你安装了LeakCanary之后，你可以通过设置使检测到内存泄露时进行自动的通知显示。该插件另一个用途是通过建立智能插脚（smart pins）检测某些对象是否已经被垃圾回收。
 
 ---------
 
-# Screeps
-> 游戏 js 战略
+# ND4J
+> Java NumPy
 
-<https://screeps.com/>
-你可以想象这个游戏是一个数字化的蚂蚁农场，里面所有的“蚂蚁”都是被玩家的编程控制的。在建立了基地和你设定的爬行程序之后，它们就开始了各自的探索这个无止境的游戏世界，收集资源并和敌人战斗，甚至可以离线操作。
-
----------
-
-# CodinGame
-> 游戏 编程
-
-<https://www.codingame.com/>
-一个大的游戏集，可以用各种语言来玩，包括：JavaScript,PHP,Ruby,Go,Python,还有其他的编程语言。这个平台包括大量的谜题，支持多个玩家和智能游戏，同时代码支持高级编辑器像Emacs和Vim.
+ND4J是一个开源的代码库，它将来自于Python社区的直观科学计算工具带到了JVMs中。它主要运用于生产环境，因此它拥有运行快速且内存需求小的特点。通过它的使用，工程师们找到了一种将算法和接口导入其它Java和Scala库的简单方法。
+作为能够提供通用的n维数组对象，包含GPUs、线性代数、信号处理等功能的多功能平台，ND4J集成了Hadoop、Spark以及它们的模仿流行Python数学库Numpy语义的API接口。
 
 ---------
 
-# Flexbox Defense
-> 游戏 编程 前端 css flexbox
+# free-programming-books
+> 开源项目 免费 电子书
 
-<http://www.flexboxdefense.com/>
-经典的塔防游戏用CSS的旋转来玩-所有的塔楼和通道是用flexbox的布局来实现。有12级的敌人来到达底部。想要完成这个游戏，需要你知道完全的flexbox的属性。
-
----------
-
-# Elevator Saga
-> 游戏 js 规划
-
-<http://play.elevatorsaga.com/>
-Elevator Saga是一个益智游戏，用JavaScript来控制建筑里的电梯。很多人一直的上上下下，你需要尽可能快的让他们到达他们的目的地。这个游戏测试你的算法书写能力，同时也测试JS的函数，数组和事件处理。
+<https://github.com/vhf/free-programming-books> <https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md>
+这个项目目前 star 数排名 GitHub 第三，总 star 数超过6w，这个项目整理了所有跟编程相关的免费书籍，而且全球多国语言版的都有，中文版的在这里：free-programming-books-zh，有了这个项目，理论上你可以获取任何编程相关的学习资料，强烈推荐给你们！
 
 ---------
 
-# Untrusted
-> 游戏 RPG 策略
+# awesome.re
+> 开源项目 语言 库 框架 合集
 
-<https://alexnisnevich.github.io/>
-Untrusted是一个meta-JavaScript冒险游戏，你扮演Dr. Eval, @ 通过改变源码来控制周围的世界。玩家用初始化的函数和使用游戏的API来让Dr. Eval逃离。
-
----------
-
-# Bonus: Dungeons & Developers
-> 前端 技能树 模拟
-
-<http://www.dungeonsanddevelopers.com/>
-一个具有CSS,HTML,JavaScript魔法的智慧树。增加你的技能在上面，看看你和真正的web开发者有多接近。可以通过自己的冒险来生成自己的智慧树简历。
+<https://awesome.re> <https://github.com/sindresorhus/awesome>
+GitHub 上有各种 awesome 系列，简单来说就是这个系列搜罗整理了 GitHub 上各领域的资源大汇总，比如有 awesome-android, awesome-ios, awesome-java, awesome-python 等等等，就不截图了，你们自行去感受。 各种niubility的库和框架大合集
 
 ---------
 
+# android-open-project
+> 开源项目 安卓
+
+<https://github.com/Trinea/android-open-project>
+这个项目是我一个好朋友 Trinea 整理的一个开源项目，基本囊括了所有 GitHub 上的 Android 优秀开源项目，但是缺点就是太多了不适合快速搜索定位，但是身为 Android 开发无论如何你们应该知道这个项目。
+
+---------
+
+# awesome-android-ui
+> 开源项目 安卓 UI
+
+<https://github.com/wasabeef/awesome-android-ui>
+这个项目跟上面的区别是，这个项目只整理了所有跟 Android UI 相关的优秀开源项目，基本你在实际开发终于到的各种效果上面都几乎能找到类似的项目，简直是开发必备。
+
+---------
+
+# LearningNotes
+> 开源项目 安卓 学习资料
+
+<https://github.com/GeniusVJR/LearningNotes>
+这是一份非常详细的面试资料，涉及 Android、Java、设计模式、算法等等等，你能想到的，你不能想到的基本都包含了，可以说是适应于任何准备面试的 Android 开发者，看完这个之后别说你还不知道怎么面试！
+
+---------
+
+# 
