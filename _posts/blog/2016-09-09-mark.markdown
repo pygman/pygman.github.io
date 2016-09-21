@@ -299,4 +299,14 @@ GitHub 上有各种 awesome 系列，简单来说就是这个系列搜罗整理�
 
 ---------
 
-# 
+# create-react-app
+> 构建工具 react 前端
+
+create-react-app是来自于Facebook出品的零配置命令行工具，能够帮你自动创建基于Webpack+ES6的最简易的React项目模板，有助于初学者快速上手实践。
+```
+npm install -g create-react-app
+
+create-react-app my-app
+cd my-app/
+npm start
+```
