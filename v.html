@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cai Hong V</title>
+  <link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <!-- <link rel="stylesheet" href="jqueryui/style.css"> -->
+  <style>
+    html,body { width: 100%; height: 100%; padding: 0; overflow: hidden; margin: 0; }
+    #main { width: 100%; height: 100%; border: 0; padding: 0; }
+    #main {
+        -ms-zoom: 1.0;
+        -moz-transform: scale(1.0);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(1.0);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(1.0);
+        -webkit-transform-origin: 0 0;
+    }
+    #red {
+        float: left;
+        clear: left;
+        width: 300px;
+        margin: 15px;
+    }
+    #red .ui-slider-range { background: #ef2929; }
+    #red .ui-slider-handle { border-color: #ef2929; }
+    #reset {
+        width: 80px;
+        margin: 15px;
+    }
+    #url {
+        width: 500px;
+    }
+  </style>
+  <script>
+      var zooms = [
+          100,
+          30,
+          40,
+          50,
+          80
+      ]
+  function refreshSwatch() {
+    var red = $( "#red" ).slider( "value" );
+    $("#main").css("-ms-zoom", red/100);
+    $("#main").css("-moz-transform", "scale("+red/100+")");
+    $("#main").css("-o-transform", "scale("+red/100+")");
+    $("#main").css("-webkit-transform", "scale("+red/100+")");
+    $("#reset").val(red+"%")
+  }
+  var load = function() {
+    var url = $("#url").val();
+    if(url==undefined || $.trim(url).length<1)
+        url = $("main").attr("src");
+    else if(!url.startsWith("http"))
+        url = "http://" + url
+    $("#main").attr("src", url);
+    // $("#url").blur();
+  };
+  $(function(){
+    $( "#red" ).slider({
+          orientation: "horizontal",
+          range: "min",
+          max: 200,
+          value: 127,
+          slide: refreshSwatch,
+          change: refreshSwatch
+      });
+      $("#reset").click(function(){
+          var red = $("#red").slider("value")
+          var i = zooms.indexOf(red);
+          $("#red").slider("value", zooms[(i+1)%(zooms.length)])
+      });
+      $( "#red" ).slider( "value", 100 );
+      $("#url").blur(load);
+      $("#url").keypress(function(event){
+        if(event.keyCode == "13")
+            $("#url").blur();
+      });
+  });
+  
+  </script>
+</head>
+<body class="ui-widget-content" style="border:0;">
+<div id="red"></div>
+<input type="button" value="100%" id="reset"></input>
+<input type="text" id="url"></input>
+<iframe id="main" src="http://caihong.love/"></iframe>
+</body>
+</html>
